@@ -1,0 +1,375 @@
+/*body*/
+
+.body {
+    width: 65%;
+    color: #2F3432;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.left {
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: auto;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+
+/*header*/
+
+.header {
+    background-color: #149777;
+    height: fit-content;
+}
+
+.logo {
+    margin: 12px;
+    margin-left: 24px;
+    width: 104px;
+}
+
+.button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin: 0 12px;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.language-button {
+    border: 1px solid #007168;
+    width: 75px;
+    height: 35px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.sinhala-button {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.tamil-button {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.chat-login-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 12px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 14px;
+    font-size: 14px;
+}
+
+.post-ad-button {
+    background-color: #ffc800;
+    color: #673500;
+    font-weight: 750;
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+/*content*/
+
+.div-margin {
+    margin-bottom: 50px;
+}
+
+p {
+    color: #707676;
+}
+
+
+/*footer*/
+
+hr.solid {
+    border-top: 3px solid #149777;
+    margin-bottom: 30px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 42px;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 5px;
+    color: #424E4E;
+    font-size: 14px;
+    text-align: left;
+    align-items: center;
+    table-layout: fixed;
+}
+
+footer a {
+    color: #0074BA;
+    text-decoration: none;
+}
+
+.column1 {
+    width: 35%;
+}
+
+hr.rounded {
+    border-top: 1px solid #bbb;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footerBottom {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+/*popup*/
+
+/* Style for the popup container */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #2F3432;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+}
+
+/* Style for the popup content */
+.popup-content {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the left side of the popup */
+.popup-left {
+    width: 50%;
+    padding-right: 24px;
+    text-align: center;
+}
+
+.popup-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.popup-left p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.popup-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.popup-left li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+hr.popup-vl {
+    margin-right: 40px;
+    border-left: 2px solid #dfe2e1;
+    height: 500px;
+}
+
+/* Style for the right side of the popup */
+.popup-right {
+    width: 50%;
+    text-align: center;
+}
+
+.popup-right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.popup-right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.popup-right form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.popup-right form input[type="tel"] {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 8px;
+}
+
+.popup-right form button[type="submit"] {
+    background-color: #89CBBB;
+    color: white;
+    font-weight: 800;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.popup p {
+    font-weight: 750;
+    color: #707676;
+}
+
+.popup-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-social button {
+    background-color: #149777;
+    color: white;
+    font-weight: 800;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 8px;
+}
+
+.popup-social button.google {
+    border: 1px solid #70768C;
+    background-color: white;
+    color: #70768C;
+}
+
+.popup-social button.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.popup a {
+    color: #0074BA;
+    text-decoration: none;
+}
+
+/* Popup container */
+.popup1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup1 .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup1 .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup1 .show {
+    visibility: visible;
+}
+
+.popup1 .close {
+    visibility: hidden;
+}
+
+.close-btn {
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #70768C;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

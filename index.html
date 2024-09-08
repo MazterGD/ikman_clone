@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ikman - Electronics, Cars, Property and Jobs in Sri Lanka!</title>
+    <link rel="shortcut icon" type="image/png" href="https://ikman.lk/facebook-opengraph.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header displayFlex center">
+            <div class="displayFlex center">
+                <div class="left">
+                    <img class="logo"
+                        src="data:image/png;base64,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"
+                        alt="ikman Logo">
+                </div>
+                <button class="button">All ads</button>
+                <button class="button language-button sinhala-button">සිංහල</button>
+                <button class="button language-button tamil-button">தமிழ்</button>
+                <div class="chat-login-button" style="justify-content: stretch;">
+                    <div>
+                        <button id="chat-btn" class="button" style="font-weight: normal;">Chat</a>
+                    </div>
+                    <div>
+                        <button id="login-btn" class="button" style="font-weight: normal;">Login</button>
+                    </div>
+                </div>
+                <button id="post-ad-btn" class="button post-ad-button">POST YOUR AD</button>
+            </div>
+        </div>
+        <div class="header displayFlex center">
+            <button id="all-sri-lanka-btn" class="button all-of-sri-lanka-button">
+                <img src="icons/location-pin-white.png" alt="Location" width="15px" height="15px">
+                All of Sri Lanka
+            </button>
+        </div>
+        <div class="header displayFlex center search-bar">
+            <form action="">
+                <input type="text" placeholder="What are you looking for?">
+                <button type="submit"><img src="icons/search.png" alt="Search" width="30" height="30"></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="popup1">
+        <div class="popup" id="login">
+            <div class="popup-content">
+                <div class="popup-left">
+                    <h3>Welcome to ikman</h3>
+                    <p>Login to manage your account.</p>
+                    <ul>
+                        <li>Start posting your own ads.</li>
+                        <li>Mark ads as favorites and view them later.</li>
+                        <li>View and manage your ads at your convenience.</li>
+                    </ul>
+                </div>
+                <hr class="popup-vl">
+                <div class="popup-right">
+                    <button id="close-btn" class="close-btn">X</button>
+                    <h3>Continue with mobile number & OTP</h3>
+                    <form>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required
+                            placeholder="Enter your mobile number">
+                        <button type="submit">Continue</button>
+                    </form>
+                    <div>
+                        <p>OR</p>
+                    </div>
+                    <div class="popup-social">
+                        <button class="google">Continue with Google</button>
+                        <button class="facebook">Continue with Facebook</button>
+                        <button class="email">Continue with Email</button>
+                    </div>
+                    <div class="center">
+                        By signing up for an account you agree to our
+                        <br>
+                        <a href="terms.html" target="_blank">Terms and Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup1">
+        <div class="popup" id="city">
+            <div class="popup-content2">
+                <div class="popup-left">
+                    <button id="close-btn2" class="close-btn">X</button>
+                    <h3>Select City or Division</h3>
+                    <button>All of Sri Lanka</button>
+                    <p>Districts</p>
+                    <ul>
+                        <li><button>Colombo</button></li>
+                        <li><button>Kandy</button></li>
+                        <li><button>Galle</button></li>
+                        <li><button>Ampara</button></li>
+                        <li><button>Anuradhapura</button></li>
+                        <li><button>Badulla</button></li>
+                        <li><button>Batticaloa</button></li>
+                        <li><button>Gampaha</button></li>
+                        <li><button>Hambantota</button></li>
+                        <li><button>Jaffna</button></li>
+                        <li><button>Kalutara</button></li>
+                        <li><button>Kegalle</button></li>
+                        <li><button>Kilinochchi</button></li>
+                        <li><button>Kurunegala</button></li>
+                        <li><button>Mannar</button></li>
+                        <li><button>Matale</button></li>
+                        <li><button>Matara</button></li>
+                        <li><button>Monaragala</button></li>
+                        <li><button>Mullativu</button></li>
+                        <li><button>Nuwara Eliya</button></li>
+                        <li><button>Polonnaruwa</button></li>
+                        <li><button>Puttalam</button></li>
+                        <li><button>Ratnapura</button></li>
+                        <li><button>Trincomalee</button></li>
+                        <li><button>Vavuniya</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="body center">
+        <h4 class="browse-items">Browse items by category</h4>
+        <table>
+            <tr>
+                <td>
+                    <a href="Electronics.html" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/smartphone.png" alt="Electronics" width="30" height="30">
+                            <div style="margin: 15px;">Electronics<br>147,449 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/car.png" alt="Vehicles" width="30" height="30">
+                            <div style="margin: 15px;">Vehicles<br>76,701 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/home.png" alt="Property" width="30" height="30">
+                            <div style="margin: 15px;">Property<br>73,385 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/gas-stove.png" alt="Home & Garden" width="30" height="30">
+                            <div style="margin: 15px;">Home & Garden<br>26,093 ads</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/repair-tools.png" alt="Services" width="30" height="30">
+                            <div style="margin: 15px;">Services<br>18,049 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/factory.png" alt="Buisness & Industry" width="30" height="30">
+                            <div style="margin: 15px;">Buisness & Industry<br>13,723 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/cat.png" alt="Animals" width="30" height="30">
+                            <div style="margin: 15px;">Animals<br>12,367 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/football.png" alt="Hobby, Sport & Kids" width="30" height="30">
+                            <div style="margin: 15px;">Hobby, Sport & Kids<br>11,523 ads</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/suitcase.png" alt="Jobs" width="30" height="30">
+                            <div style="margin: 15px;">Jobs<br>9,899 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/wrist-watch.png" alt="Fashion & Beauty" width="30" height="30">
+                            <div style="margin: 15px;">Fashion & Beauty<br>7,445 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/mortarboard.png" alt="Education" width="30" height="30">
+                            <div style="margin: 15px;">Education<br>3,185 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/shopping-bag.png" alt="Essentials" width="30" height="30">
+                            <div style="margin: 15px;">Essentials<br>2,067 ads</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/package.png" alt="Other" width="30" height="30">
+                            <div style="margin: 15px;">Other<br>1,970 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/wheat.png" alt="Agriculture" width="30" height="30">
+                            <div style="margin: 15px;">Agriculture<br>1,394 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="" class="browse-button">
+                        <div class="displayFlex left">
+                            <img src="icons/international-business.png" alt="Work Overseas" width="30" height="30">
+                            <div style="margin: 15px;">Work Overseas<br>773 ads</div>
+                        </div>
+                    </a>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="displayFlex container-container" style="margin-bottom: 42px;">
+            <div class="displayFlex container">
+                <div><img src="icons/money-bag.png" alt="money" width="125" height="125"></div>
+                <div>
+                    <h3>Start making money!</h3>
+                    <p class="paragraph">Do you have something to sell?<br>
+                        Post your first ad and start making money!</p>
+                    <button id="post-ad-free-btn" class="container-post-ad-button">Post your ad for free</button>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="displayFlex container">
+                <div>
+                    <img src="icons/ikman-jobs.png" alt="ikman JOBS" height="35">
+                    <p class="paragraph">Looking to hire or get hired in Sri Lanka ?<br>
+                        Get access to 400k+ CVs or browse through 4.5k+ job vacancies!</p>
+                    <button class="container-explore-button">Explore more</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h4>Quick links</h4>
+                <div class="displayFlex">
+                    <div class="quick-links">
+
+                        <h5>146,760 ads in Electronics</h5>
+                        <p>
+                            <a href="">Mobile Phones |</a>
+                            <a href="">Cameras &
+                                Camcorders |</a>
+                            <a href="">Computers & Tablets |</a>
+                            <a href="">TVs |</a>
+                            <a href="">Air Conditions & Electrical
+                                fittings</a>
+                        </p>
+                    </div>
+                    <div class="quick-links">
+                        <h5>69,841 ads in Property</h5>
+                        <p>
+                            <a href="">Land |</a>
+                            <a href="">Houses for Sale |</a>
+                            <a href="">House Rentals |</a>
+                            <a href="">Apartments for Sale |</a>
+                            <a href="">Apartment Rentals</a>
+                        </p>
+                    </div>
+                    <div class="quick-links">
+                        <h5>9,869 ads in Jobs</h5>
+                        <p>
+                            <a href="">Data Entry Operator |</a>
+                            <a href="">Driver |</a>
+                            <a href="">Packaging Officer |</a>
+                            <a href="">Clerk |</a>
+                            <a href="">Sales Executive</a>
+                        </p>
+                    </div>
+                    <div class="quick-links">
+                        <h5>76,148 ads in Vehicles</h5>
+                        <p>
+                            <a href="">Cars |</a>
+                            <a href="">Motorbikes |</a>
+                            <a href="">Three Wheelers |</a>
+                            <a href="">Auto Parts & Accessories |</a>
+                            <a href="">Auto Services</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="paragraph">
+                <h4>About ikman, The Largest Marketplace in Sri Lanka!</h4>
+                <p>
+                    Sri Lanka’s household name for buying and selling anything to everything online. Do you want to buy
+                    a
+                    property? Check ikman! Do you want to sell a bike? Check ikman.
+                </p>
+                <p>
+                    ikman has the widest selection of items across Sri Lanka and over 50 different categories. Whether
+                    you're
+                    looking for a car, mobile phone, house,<span id="dots">...</span>
+                    <span id="more"> computer or pet, you will find the best deal on ikman. Our
+                        search
+                        and filters make it easy to find precisely what you're looking for!
+                    </span>
+                </p>
+                <span id="more2">
+                    <h4>Buy, Sell New and Used Items Or Land Jobs Through ikman</h4>
+                    <p>
+                        Every month hundreds of new users use ikman. SME’s and small businesses signup for memberships.
+                        You
+                        can
+                        search & filter products & services from the comfort of your own home.
+                    </p>
+                    <p>
+                        As one of the free advertising sites in Sri Lanka it has helped many people to find their
+                        favourite
+                        phones,
+                        pets, cars, and properties. Or even the dream job through classified ads in no time. This
+                        feature on
+                        ikman
+                        makes it easy for you to find exactly what you're looking for and saves time.
+                    </p>
+                    <p>
+                        You can sign up for a free account to start selling your items. It takes less than 2 minutes to
+                        post
+                        an
+                        ad.
+                        Visit How to sell fast for some tips on creating great ads that generate a lot of buyer
+                        interest. It
+                        goes
+                        without saying that when you have the membership, you are automatically entitled to more perks.
+                    </p>
+                    <p>
+                        If you have many items to sell, a membership would be the ideal choice. We also have some great
+                        tools
+                        that
+                        help make your ad stand out. Check out the Ad Promotions page for more information.
+                    </p>
+                    <h4>Perks of online shopping on ikman</h4>
+                    <p>
+                        There are free advertising sites in Sri Lanka but finding the top-ranking one like ikman isn't a
+                        hard
+                        shot.
+                        Whether you want to buy used items or sell used items, you only have minutes of procedures for
+                        it
+                        all.
+                        Type
+                        Sri Lanka buy and sell, and you'll see ikman on top searches. People prefer it over other free
+                        advertising
+                        sites Sri Lanka because:
+                    </p>
+                    <p>
+                        <b>Effortless navigation</b> — as soon as you see a free classified website, you don't feel
+                        you'll
+                        get
+                        quality
+                        services, but ikman proves you wrong. Suppose you want to sell new items or buy new items. You
+                        just
+                        have
+                        to
+                        read through the instructions about Post ads free and follow them. Once you do, you'll have your
+                        ad
+                        up
+                        and
+                        running. All under a few minutes, and that's how navigation works; faster, simpler, and minimal.
+                    </p>
+                    <p>
+                        <b>Secure and Safe Shopping</b> — Buy online or sell online is only good as long as classified
+                        sites
+                        are
+                        ready to
+                        provide secure and safe shopping. You can even use the location selector to find deals close to
+                        you
+                        or
+                        check
+                        out ads to have items delivered directly to you with 100% buyer protection. The site's been
+                        around
+                        for
+                        years
+                        because it has earned the users' trust.
+                    </p>
+                </span>
+            </div>
+            <div>
+                <button onclick="showMore()" id="show-more-btn" class="show-more-btn">Show more</button>
+            </div>
+        </div>
+    </div>
+
+    <hr class="solid">
+
+    <div class="body center">
+        <footer>
+            <table>
+                <tr>
+                    <th class="column1">Download our app</th>
+                    <th>More from ikman</th>
+                    <th>Help & Support</th>
+                    <th>Follow ikman</th>
+                    <th>About ikman</th>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="column1">
+                        <a href="https://play.google.com/store/apps/details?id=lk.ikman">
+                            <img src="https://www.earfy.net/wp-content/uploads/2016/03/google-play-logo.jpg"
+                                alt="Google play" height="40">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/ikman/id991709749">
+                            <img src="https://www.nicepng.com/png/detail/17-179971_itunes-app-store-logo.png"
+                                alt="App store" height="45">
+                        </a>
+                    </td>
+                    <td><a href="https://ikman.lk/en/sell-fast">Sell Fast</a></td>
+                    <td><a
+                            href="https://helpcenteren.ikman.lk/?_gl=1*1efx8mn*_ga*OTcyODUzOTY1LjE2ODA1ODg2NjE.*_ga_R6R5PK08HD*MTY4MTQ4MDU0Ni4xNC4xLjE2ODE0ODUyOTkuMTIuMC4w">FAQ</a>
+                    </td>
+                    <td><a
+                            href="https://blog.ikman.lk/?_gl=1*1efx8mn*_ga*OTcyODUzOTY1LjE2ODA1ODg2NjE.*_ga_R6R5PK08HD*MTY4MTQ4MDU0Ni4xNC4xLjE2ODE0ODUyOTkuMTIuMC4w">Blog</a>
+                    </td>
+                    <td><a href="https://ikman.lk/en/help/about#help-content">About Us</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://ikman.lk/en/membership">Membership</a></td>
+                    <td><a href="https://ikman.lk/en/stay-safe">Stay safe</a></td>
+                    <td><a href="https://www.facebook.com/ikman">Facebook</a></td>
+                    <td><a href="https://ikman.lk/en/shops/ikman-careers">Career</a></td>
+                </tr>
+                <tr>
+                    <th class="column1">Connect with</th>
+                    <td><a href="https://ikman.lk/en/advertising">Banner Ads</a></td>
+                    <td><a href="https://ikman.lk/en/help/contact#help-content">Contact Us</a></td>
+                    <td><a href="https://twitter.com/Ikman_lk">Twitter</a></td>
+                    <td><a href="terms.html">Terms and Conditions</a></td>
+                </tr>
+                <tr>
+                    <td class="column1">
+                        <a href="https://www.facebook.com/ikman" target="_blank">
+                            <img src="https://www.mhafbfun.com/wp-content/uploads/2017/12/Facebook-Logo-Square-768x768-1.png"
+                                alt="Facebook logo" width="20">
+                            Like us on facebook
+                        </a>
+                    </td>
+                    <td><a href="https://ikman.lk/en/promotions">Ad Promotions</a></td>
+                    <td><a href=""></a></td>
+                    <td><a href="https://www.youtube.com/user/Ikmansl">Youtube</a></td>
+                    <td><a href="https://ikman.lk/en/privacy">Privacy policy</a></td>
+                </tr>
+                <tr>
+                    <th class="column1">Other countries</th>
+                    <td><a href="https://ikman.lk/en/staffing">Staffing solutions</a></td>
+                    <td><a href=""></a></td>
+                    <td><a href=""></a></td>
+                    <td><a href="https://ikman.lk/en/sitemap">Sitemap</a></td>
+                </tr>
+                <tr>
+                    <td class="column1"><a href="https://bikroy.com/">Bangladesh</a></td>
+                </tr>
+            </table>
+            <hr class="rounded">
+            <div class="displayFlex footerBottom">
+                <div class="left">Copyright © Saltside Technologies</div>
+                <div class="right">
+                    <img src="https://bizenglish.adaderana.lk/wp-content/uploads/Ikman-New-Logo-2.jpg" alt="ikman logo"
+                        height="50px">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="Header.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
